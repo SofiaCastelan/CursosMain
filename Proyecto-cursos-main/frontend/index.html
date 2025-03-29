@@ -16,10 +16,10 @@
             <li class="contenedor-menu-lista"><a href="#1" class="direccion">Inicio</a></li>
             <li class="contenedor-menu-lista"><a href="/Proyecto-cursos-main/cursos/cursos.html" class="direccion">Cursos</a></li>
             <li class="contenedor-menu-lista"><a href="#4" class="direccion">Suscripción</a></li>
-            <li class="contenedor-menu-lista"><a href="#" id="loginLink" class="direccion">Iniciar Sesión</a></li>
+            <li class="contenedor-menu-lista" id="userMenu">
+              <a href="#" class="direccion" id="loginLink">Iniciar Sesión</a>
+            </li>
         </ul>
-        <li class="contenedor-menu-lista">
-          </li>
     </header>
     
     <div id="loginForm">
@@ -253,21 +253,36 @@
 </div>
 <script src="js/script.js"></script>
 <script>
-    // Función para login con Google
-    document.getElementById('googleLoginBtn').addEventListener('click', () => {
-      window.location.href = 'http://localhost:3000/auth/google';
-    });
-  
-    // Verificar estado de autenticación al cargar la página
-    fetch('http://localhost:3000/api/user')
-      .then(response => response.json())
-      .then(user => {
-        if (user) {
-          // Usuario logueado: Mostrar datos
-          document.getElementById('user-name').textContent = user.nombre;
-          document.getElementById('login-section').style.display = 'none';
-        }
-      });
+
+     // Función para login con Google
+     document.getElementById('googleLoginBtn').addEventListener('click', () => {
+            window.location.href = 'http://localhost:3000/auth/google';  // Cambia a la URL de tu autenticación con Google
+        });
+      
+        // Verificar estado de autenticación al cargar la página
+        fetch('http://localhost:3000/api/user')
+          .then(response => response.json())
+          .then(user => {
+            if (user) {
+              // Usuario logueado: Cambiar el texto del menú
+              document.getElementById('loginLink').textContent = user.nombre;  // Nombre del usuario
+              document.getElementById('loginLink').href = '/perfil';  // Redirigir a perfil del usuario, si lo tienes
+              document.getElementById('userMenu').innerHTML = `<a href="/perfil" class="direccion">${user.nombre}</a>`;  // Cambiar el enlace
+            }
+          });
+
+        // Redirigir a index.html después de login exitoso
+        fetch('http://localhost:3000/api/user')
+          .then(response => response.json())
+          .then(user => {
+            if (user) {
+              // Redirigir a index.html después de la autenticación
+              window.location.href = 'index.html';
+            }
+          });
+
+
+
   </script>
 </body>
 </html>
