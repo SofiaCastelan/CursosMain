@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk Tecnology</title>
+    <link rel="stylesheet" href="/Proyecto-cursos-main/frontend/estilos/style.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="logo-desc">
+            <img src="/Proyecto-cursos-main/frontend/img/logo.png" alt="" class="logo">
+            <p>Desk Tecnology</p>
+        </div>
+        <ul class="contenedor-menu">
+            <li class="contenedor-menu-lista"><a href="#1" class="direccion">Inicio</a></li>
+            <li class="contenedor-menu-lista"><a href="/Proyecto-cursos-main/cursos/cursos.html" class="direccion">Cursos</a></li>
+            <li class="contenedor-menu-lista"><a href="#4" class="direccion">Suscripción</a></li>
+            <li class="contenedor-menu-lista"><a href="#" id="loginLink" class="direccion">Iniciar Sesión</a></li>
+        </ul>
+        <li class="contenedor-menu-lista">
+          </li>
+    </header>
+    
+    <div id="loginForm">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <h1>ACCESO AL SISTEMA</h1>
+        <h2>Inicia Sesión para empezar a aprender</h2>
+        
+        <!-- Formulario tradicional -->
+        <form id="loginFormTraditional">
+          <input type="email" id="loginEmail" placeholder="EMAIL" required><br>
+          <input type="password" id="loginPassword" placeholder="CONTRASEÑA" required><br>
+          <button type="submit"><img src="img/enviar.png" class="enviar" alt=""></button>
+        </form>
+      
+        <div class="recuperar">
+          <p>Recuperar contraseña</p>
+          <p><a href="/registro/registro.html">¿Sin cuenta? Suscríbete ya</a></p>
+        </div>
+      
+        <p class="ini">O inicia sesión con...</p>
+        <div class="img-iconos-ini">
+          <!-- Botones OAuth - IMPORTANTE: añade IDs -->
+          <img src="img/gogle.png" alt="Google Login" id="googleLoginBtn">
+          <img src="img/github.png" alt="GitHub Login" id="githubLoginBtn">
+        </div>
+      </div>
+
+
+    <div class="todo">
+    <section class="panel uno" id="1">
+        <div class="introduccion">
+            <div class="introduccion-der">
+                <h1>APRENDE, CRECE Y ALCANZA TUS METAS DESDE CUALQUIER LUGAR</h1>
+                <button class="btn-explora">Explora nuestros cursos <img src="img/flecha.png" alt="" class="flecha"></button>
+            </div>
+            <div class="introduccion-izq">
+                <img src="img/inicio.png" alt="" class="img-introduccion">
+            </div>
+        </div>
+    </section>
+    <section class="panel" id="2">
+        <div class="top-cursos">
+            <div class="seccionUno">
+                <div class="descripciones">
+                    <h1 class="titulo-top-curso">Top Cursos</h1>
+                    <p class="descripcion-top-cursos">¡Descubre los cursos de programación más destacados y aprende habilidades clave para destacar en la industria tecnológica!</p>
+                    <a href="#"><img src="img/flecha-top.png" alt="" class="flecha-top-cursos"></a>
+                </div>
+            </div>
+            <div class="seccionDos uno">
+                <div class="numero">
+                <h1 class="titulo-top-curso">01</h1>
+                </div>
+                <div class="cursos">
+                    <img src="img/java.png" alt="" class="img-java">
+                    <h2 class="cursos-desc1">Curso Java</h2>
+                    <p class="cursos-desc">Java es uno de los lenguajes de programación más utilizados en el mundo, ideal para el desarrollo de aplicaciones web, 
+                        móviles y empresariales.</p>
+                    <p class="cursos-desc">📜 Incluye certificado de finalización <br> 💻 Acceso de por vida y soporte de instructores</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="panel" id="3">
+        <div class="top-cursos">
+            <div class="seccionUno">
+                <div class="descripciones">
+                    <h1 class="titulo-top-curso">Recien Agregados</h1>
+                    <p class="descripcion-top-cursos">¡Mantente al día con los cursos más nuevos en el mundo de la programación! En esta sección encontrarás los programas más recientes 
+                        diseñados para abordar las tecnologías y tendencias emergentes.</p>
+                    <a href="#"><img src="img/flecha-top.png" alt="" class="flecha-top-cursos"></a>
+                </div>
+            </div>
+            <div class="seccionDos">
+                <div class="numero">
+                <h1 class="titulo-top-curso">02</h1>
+                </div>
+                <div class="cursos">
+                    <img src="img/REACT.png" alt="" class="img-java">
+                    <h2 class="cursos-desc1">Curso React</h2>
+                    <p class="cursos-desc">React es una poderosa biblioteca de JavaScript que te permite crear aplicaciones web rápidas, interactivas y escalables. Este curso está diseñado para guiarte paso a paso, 
+                        desde los fundamentos hasta el desarrollo de proyectos avanzados, utilizando las mejores prácticas de la industria. </p>
+                    <p class="cursos-desc"><br>📜 Incluye certificado de finalización <br> 💻 Acceso de por vida y soporte de instructores</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class="panel" id="4">
+        <div class="suscripcion">
+            <div class="texto">
+                <h1 class="titulo-suscripcion">Suscripción</h1>
+                <p class="cursos-desc sus">Elige el plan que mejor se adapte a tus necesidades 
+                    y accede a contenido exclusivo para 
+                    potenciar tus habilidades en programación.</p>
+            </div>
+            <div class="planes">
+                <div class="plan-estandar">
+                    <p class="tt-plan">Plan Estándar<p>
+                    <div class="costo">
+                        <p class="signo">$</p>
+                        <p class="cost">854</p>
+                        <p class="cost-mensual">mensual</p>
+                    </div>
+                    <div class="costo-antes">
+                        <p class="cost-antes">antes</p>
+                        <p class="cost-ant">$1500</p>
+                    </div>
+                    <div class="descr-plan">
+                        <p class="const-mensual">
+                            ✔️Acceso a todos los cursos de nivel básico e intermedio <br>
+                            ✔️ Proyectos prácticos y ejercicios interactivos <br>
+                            ✔️ Acceso a sesiones en vivo con instructores una vez al mes <br>
+                            ✔️ Certificados de finalización para cada curso <br>
+                            ✔️ Acceso a comunidad premium
+                        </p>
+                    </div>
+                    <button class="btn-plan">Obtener plan</button>
+                    <p class="desc-cancela">Cancela en cualquier momento</p>
+                </div>
+                <div class="plan-avanzado">
+                    <div class="realtado-negro">
+                        <p class="mas-p">Más popular</p>
+                    </div>
+                    <p class="tt-plan">Plan Avanzado</p>
+                    <div class="costo">
+                        <p class="signo">$</p>
+                        <p class="cost">1200</p>
+                        <p class="cost-mensual">mensual</p>
+                    </div>
+                    <div class="costo-antes">
+                        <p class="cost-antes">antes</p>
+                        <p class="cost-ant">$2300</p>
+                    </div>
+                    <div class="descr-plan">
+                        <p class="const-mensual">
+                            ✔️Todo lo del Plan Estándar <br>
+                            ✔️Acceso a cursos avanzados y especializaciones (React, Node.js, IA, Ciberseguridad, etc.) <br>
+                            ✔️Desafíos y proyectos en equipo con mentoría <br>
+                            ✔️Acceso a código fuente de proyectos completos <br>
+                            ✔️Certificaciones profesionales verificadas <br>
+                            ✔️Descuentos en eventos y workshops exclusivos
+                        </p>
+                    </div>
+                    <button class="btn-plan">Obtener plan</button>
+                    <p class="desc-cancela">Cancela en cualquier momento</p>
+                </div>
+                <div class="plan-empresarial">
+                    <p class="tt-plan">Plan Empresario</p>
+                    <div class="costo">
+                        <p class="signo">$</p>
+                            <p class="cost">2500</p>
+                            <p class="cost-mensual">mensual</p>
+                    </div>
+                    <div class="costo-antes">
+                        <p class="cost-antes">antes</p>
+                        <p class="cost-ant">$3000</p>
+                    </div>
+                    <div class="descr-plan">
+                        <p class="const-mensual">
+                            ✔️Todo lo del Plan Avanzado <br>
+                            ✔️Acceso multiusuario para equipos de trabajo <br>
+                            ✔️Análisis de progreso y reportes personalizados <br>
+                            ✔️ Talleres privados y asesoramiento técnico <br>
+                            ✔️ Soporte prioritario
+                        </p>
+                    </div>
+                    <button class="btn-plan">Obtener plan</button>
+                    <p class="desc-cancela">Cancela en cualquier momento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" id="5">
+        <h1 class="titulo-comentarios">Mira lo que están logrando otros gracias al aprendizaje</h1>
+        <div class="contenedor">
+            <div class="comentario primer">
+                <div class="text-com">
+                <p class="negritas">"Perfecto para aprender a tu ritmo"</p>
+                <span>El curso de JavaScript me ayudó a mejorar mis habilidades y aplicarlo en mi trabajo actual. ¡Muy contento con la experiencia!<br>- Carlos López</span>
+            </div>
+            </div>
+            <div class="comentario segundo">
+                <div class="text-com2">
+                <p class="negritas">"Increíble relación calidad-precio"</p>
+                <span>El contenido es completo, actualizado y bien estructurado. ¡Gracias por esta oportunidad!<br>- Sofía Ramírez</span>
+            </div>
+            </div>
+            <div class="comentario tercero">
+                <div class="text-com3">
+                <p class="negritas">"Transformó mi carrera"</p>
+                <span>Las explicaciones son claras, los ejercicios útiles y el soporte increíble. Ahora trabajo como desarrolladora junior.<br>- Ana Martínez</span>
+            </div>
+            </div>
+            <div class="comentario cuarto">
+                <div class="text-com4">
+                <p class="negritas">"Ideal para principiantes"</p>
+                <span>Nunca había programado antes y este curso fue perfecto. Me siento seguro para seguir aprendiendo.<br>- Javier Gómez</span>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="legales">
+                <h4>Legales</h4>
+                <a href="#">Aviso de privacidad</a>
+                <a href="#">Términos de uso</a>
+            </div>
+            <div class="redes-sociales">
+                <h4>Redes sociales</h4>
+                <div class="icons">
+                    <img src="img/facebook.png" alt="">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/tiktok.png" alt="">
+                </div>
+            </div>
+            <div class="descargas">
+                <h4>Descargas</h4>
+                <p>Disponible en:</p>
+                <span><img src="img/appstore.png" alt=""> App Store</span> <span><img src="img/googleplay.png" alt=""> Google Play</span>
+            </div>
+            <div class="ayuda">
+                <h4>Ayuda</h4>
+                <input type="email" placeholder="Ingrese correo electrónico">
+                <button>Contáctanos</button>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/script.js"></script>
+<script>
+    // Función para login con Google
+    document.getElementById('googleLoginBtn').addEventListener('click', () => {
+      window.location.href = 'http://localhost:3000/auth/google';
+    });
+  
+    // Verificar estado de autenticación al cargar la página
+    fetch('http://localhost:3000/api/user')
+      .then(response => response.json())
+      .then(user => {
+        if (user) {
+          // Usuario logueado: Mostrar datos
+          document.getElementById('user-name').textContent = user.nombre;
+          document.getElementById('login-section').style.display = 'none';
+        }
+      });
+  </script>
+</body>
+</html>

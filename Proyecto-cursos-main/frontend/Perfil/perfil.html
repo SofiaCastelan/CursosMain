@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/Proyecto-cursos-main/frontend/Perfil/stylePerfil.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="logo-desc">
+            <img src="/Proyecto-cursos-main/frontend/img/logo.png" alt="" class="logo">
+            <p>Desk Tecnology</p>
+        </div>
+        <ul class="contenedor-menu">
+            <li class="contenedor-menu-lista"><a href="/Proyecto-cursos-main/frontend/index.html" class="direccion">Inicio</a></li>
+            <li class="contenedor-menu-lista"><a href="/cursos/cursos.html" class="direccion">Cursos</a></li>
+            <li class="contenedor-menu-lista"><a href="/Proyecto-cursos-main/frontend/index.html#4" class="direccion">Suscripción</a></li>
+        </ul>
+    </header>
+    <div class="profile-container">
+        <h1 style="position: absolute; display: flex; top: 3rem; left: 4rem;">Perfil</h1>
+        <div class="izquierda">
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil" id="profilePic" class="profile-pic">
+        <input type="file" id="fileInput" hidden>
+        <div class="buttons">
+            <div class="drag-area" id="dropArea">Arrastra una imagen aquí o haz clic</div>
+            <button class="change-btn" onclick="fileInput.click()">Cambiar Foto</button>
+            <button class="delete-btn" onclick="removeImage()">Eliminar Foto</button>
+        </div>
+        </div>
+        <div class="derecha">
+            <p>Nombre del Usuario</p>
+            <input type="text" placeholder="Juana Valderz Contreras">
+            <p>Email</p>
+            <input type="text" placeholder="Juana085@gmail.com">
+            <p style="margin-bottom: 0.5rem;">Cursos</p>
+            <section id="cursos" class="contenedor"></section>
+        </div>
+    </div>
+<script src="/Proyecto-cursos-main/frontend/Perfil/Perfil.js"></script>
+</body>
+</html>

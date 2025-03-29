@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+
+:root {
+    --gris-bg-color: #D9D9D9;
+    --azul-bg-color: #658BCA;
+    --blanco-bg-color: #ffffff;
+    --text-josefin: "Josefin Slab", serif;
+    --text-jomolhari: "Jomolhari", serif;
+    --text-jura: "Jura", sans-serif;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    color: #000000;
+}
+
+.logo-desc{
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--text-jura);
+    font-weight: 800;
+}
+
+.contenedor-menu{
+    display: flex;
+    width: 100rem;
+    align-items: center;
+    justify-content: end;
+}
+
+.contenedor-menu-lista{
+    padding: 1rem;
+    list-style-type: none;
+    font-family: (var(--text-josefin));
+    font-size: 1rem;
+}
+
+.contenedor-menu-lista a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.fondo{
+    display: flex;
+    z-index: 1;
+    width: 100%;
+}
+
+.gris{
+    background-color: var(--gris-bg-color);
+    width: 50%;
+    height: 100vh;
+}
+
+.azul{
+    background-color: var(--azul-bg-color);
+    width: 50%;
+    height: 100vh;
+}
+
+
+.blanco{
+    position: absolute;
+    width: 80%;
+    height: 50rem;
+    background-color: var(--blanco-bg-color);
+    margin: -55rem 0 0 11.75rem;
+    display: flex;
+}
+
+.formulario{
+    width: 50%;
+    height: 100%;
+    font-family: var(--text-jomolhari);
+}
+
+.formulario-img{
+    width: 50%;
+    height: 100%;
+    background-color: var(--gris-bg-color);
+    background-image: url(/img/conejo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login{
+    width: 80%;
+    margin: 4rem;
+}
+
+.login h1{
+    font-weight: 200;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 25rem;
+    height: 2rem;
+}
+
+
+.acepto{
+    width: 1rem;
+    height: auto;
+}
+
+.checkboxx{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 8rem;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    background-color: var(--azul-bg-color);
+    color: var(--blanco-bg-color);
+    font-family: var(--text-jomolhari);
+}
+
+button:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow:  -20px 20px 31px #858585,
+             20px -20px 31px #ffffff;
+}
